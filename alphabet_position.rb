@@ -1,8 +1,7 @@
 def alphabet_index
 combined = {}
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-arrange = alphabet.split("").sort
-arrange.each_with_index do |val, index|
+alphabet = ("a".."z")
+alphabet.each_with_index do |val, index|
   combined[val] = (index + 1)
 end
 combined
@@ -12,8 +11,6 @@ def letters_only(string)
 stripped = string.gsub!(/[^a-zA-Z]/, '')
 stripped
 end
-
-
 
 def alphabet_position(statement)
   complete = []
