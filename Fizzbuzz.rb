@@ -20,5 +20,3 @@ end
 def divisible_by(number, divider)
    number % divider == 0 
 end
-
-puts fizzbuzz(5)
